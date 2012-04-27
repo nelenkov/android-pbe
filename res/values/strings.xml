@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Andorid PBE</string>
+    <string-array name="derivation_methods">
+        <item>Padding key derivation</item>
+        <item>SHA1PRNG key derivation</item>
+        <item>PBKDF2 key derivation</item>
+        <item>PKCS#12 key derivation</item>
+    </string-array>
+
+</resources>

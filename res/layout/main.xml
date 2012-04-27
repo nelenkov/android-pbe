@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/derivation_method_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/derivation_methods" />
+
+    <TextView
+        android:id="@+id/password_label_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:gravity="left"
+        android:text="Password:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:gravity="left"
+        android:hint="Enter password"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text="password" />
+
+    <TextView
+        android:id="@+id/encrypted_label_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Encrypted string: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/encrypted_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/raw_key_label_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Raw key: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/raw_key_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/decrypted_label_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Decrypted string: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/decrypted_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="" />
+
+    <Button
+        android:id="@+id/list_algs_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="List algorithms" />
+
+    <Button
+        android:id="@+id/encrypt_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decrypt_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Decrypt" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Clear" />
+
+</LinearLayout>
